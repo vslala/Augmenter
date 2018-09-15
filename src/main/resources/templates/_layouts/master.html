@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head th:fragment="common_header(title, links)">
+	<meta charset="ISO-8859-1">
+	<title th:replace="${title}">Insert Title Here</title>
+
+	<th:block th:replace="${links}" />
+</head>
+<body th:fragment="common_body(body)">
+<!--  The common body -->
+</body>
+</html>
