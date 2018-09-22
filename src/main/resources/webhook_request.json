@@ -1,0 +1,130 @@
+{
+  "responseId": "c4d0568c-6b60-4ba9-86b8-5493e53eff9a",
+  "queryResult": {
+    "queryText": "Tell me a joke?",
+    "action": "tell_joke",
+    "parameters": {
+      "category": [],
+      "name": ""
+    },
+    "allRequiredParamsPresent": true,
+    "outputContexts": [{
+      "name": "projects/be-my-aficionado-1491969540599/agent/sessions/1529060533931/contexts/google_assistant_input_type_touch",
+      "parameters": {
+        "name.original": "",
+        "name": "",
+        "category.original": "",
+        "category": []
+      }
+    }, {
+      "name": "projects/be-my-aficionado-1491969540599/agent/sessions/1529060533931/contexts/humor",
+      "lifespanCount": 5,
+      "parameters": {
+        "name.original": "",
+        "name": "",
+        "category.original": "",
+        "category": []
+      }
+    }, {
+      "name": "projects/be-my-aficionado-1491969540599/agent/sessions/1529060533931/contexts/humorjoke-followup",
+      "lifespanCount": 2,
+      "parameters": {
+        "name.original": "",
+        "name": "",
+        "category.original": "",
+        "category": []
+      }
+    }, {
+      "name": "projects/be-my-aficionado-1491969540599/agent/sessions/1529060533931/contexts/actions_capability_screen_output",
+      "parameters": {
+        "name.original": "",
+        "name": "",
+        "category.original": "",
+        "category": []
+      }
+    }, {
+      "name": "projects/be-my-aficionado-1491969540599/agent/sessions/1529060533931/contexts/actions_capability_audio_output",
+      "parameters": {
+        "name.original": "",
+        "name": "",
+        "category.original": "",
+        "category": []
+      }
+    }, {
+      "name": "projects/be-my-aficionado-1491969540599/agent/sessions/1529060533931/contexts/actions_capability_web_browser",
+      "parameters": {
+        "name.original": "",
+        "name": "",
+        "category.original": "",
+        "category": []
+      }
+    }, {
+      "name": "projects/be-my-aficionado-1491969540599/agent/sessions/1529060533931/contexts/actions_capability_media_response_audio",
+      "parameters": {
+        "name.original": "",
+        "name": "",
+        "category.original": "",
+        "category": []
+      }
+    }],
+    "intent": {
+      "name": "projects/be-my-aficionado-1491969540599/agent/intents/aafbdd8a-3f6b-4012-88ea-65921ae205f5",
+      "displayName": "humor.joke"
+    },
+    "intentDetectionConfidence": 1.0,
+    "diagnosticInfo": {
+    },
+    "languageCode": "en-gb"
+  },
+  "originalDetectIntentRequest": {
+    "source": "google",
+    "version": "2",
+    "payload": {
+      "isInSandbox": true,
+      "surface": {
+        "capabilities": [{
+          "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+        }, {
+          "name": "actions.capability.WEB_BROWSER"
+        }, {
+          "name": "actions.capability.AUDIO_OUTPUT"
+        }, {
+          "name": "actions.capability.SCREEN_OUTPUT"
+        }]
+      },
+      "inputs": [{
+        "rawInputs": [{
+          "query": "Tell me a joke?",
+          "inputType": "TOUCH"
+        }],
+        "arguments": [{
+          "rawText": "Tell me a joke?",
+          "textValue": "Tell me a joke?",
+          "name": "text"
+        }],
+        "intent": "actions.intent.TEXT"
+      }],
+      "user": {
+        "lastSeen": "2018-06-15T11:01:25Z",
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImhRbmptOHhiNUVUbmFjdjNTUmxEYXRyVEFxaDROTnlJMGk1aEI4TGtqc0EifQ.eyJleHAiOjE1MzYzMTk3NDAsIm5iZiI6MTUzNjMxNjE0MCwidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5taWNyb3NvZnRvbmxpbmUuY29tL2NlY2I5Yzk0LTg1MzEtNDY0YS1iNzk2LTNkNWUxZTdhZWM5Ni92Mi4wLyIsInN1YiI6IjJlNDZkZDMxLTI4MWEtNDBhZS05YjQwLTMxYzI3MmM1OWMyZiIsImF1ZCI6IjRkZDVmNTk4LTVhNGYtNDg4ZS1iYzg1LWZlOThhOGZlOTY1MSIsImFjciI6ImIyY18xYV9zaWdudXBfc2lnbmluX2FhZCIsIm5vbmNlIjoibm9uY2UiLCJpYXQiOjE1MzYzMTYxNDAsImF1dGhfdGltZSI6MTUzNjMxNjE0MCwibmFtZSI6IkdQIFRlY2ggQWRtaW4iLCJnaXZlbl9uYW1lIjoiR1AgVGVjaCIsImZhbWlseV9uYW1lIjoiU3VwcG9ydCBBZG1pbiIsImVtYWlsIjoiZ3BfdGVjaF9zdXBwb3J0X2FkbWluQGdsb2JhbHBheS5jb20ifQ.SzbdRsw_5Ucs2yMjw6UQ2X25qRCSYY2XM93nI4yRCe-WmjpYmzEJk_M4lS3Vh7Py4eOLeBM89tynIJ3V1HG6J-Q5WoCALwBwO6P4g0Cg25R5jUBrXEtRxwK7PsVCiUBmecPlD0e3BzrxrBS8W6WxDm648kQUhw__17rZLCk5GXrvdznnRUD-kopLCOQneL_z4KnqZxzp2M5Qhn6FYDP7jB6mZZRm8GTghs-KqDu_ctPOOe5q0ogXWdqPpQv5Xwyb6mUna842gM2eJsQYyw0ymQsfRboKsQDn2epxA7uuVHDZu6RlmoZEhNDw3peuaGHvDKWKUJ0zLyn-lSiLOVWLLA",
+        "locale": "en-GB",
+        "userId": "ABwppHF2evBmrkIz1hC4PnO3hGtKngE5GEB1h8L7GLGTJwK0EtvSj15qob83MPttwY4JjaJaOdLQYnM0E8MJTcPNKmnD4A0MsVA84cE"
+      },
+      "conversation": {
+        "conversationId": "1529060533931",
+        "type": "ACTIVE",
+        "conversationToken": "[]"
+      },
+      "availableSurfaces": [{
+        "capabilities": [{
+          "name": "actions.capability.WEB_BROWSER"
+        }, {
+          "name": "actions.capability.AUDIO_OUTPUT"
+        }, {
+          "name": "actions.capability.SCREEN_OUTPUT"
+        }]
+      }]
+    }
+  },
+  "session": "projects/be-my-aficionado-1491969540599/agent/sessions/1529060533931"
+}

@@ -1,4 +1,4 @@
-package com.augmentor.app.controllers;
+package com.augmenter.app.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

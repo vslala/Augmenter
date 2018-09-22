@@ -15,4 +15,8 @@ include 'api'
 include 'services:webservice'
 */
 
+include ':DialogFlowLibrary'
+include ':BigQueryConnect'
+project(':BigQueryConnect').projectDir = new File("C:/git/BigQueryConnect")
+project(':DialogFlowLibrary').projectDir  = new File("C:/git/DialogFlowLibrary")
 rootProject.name = 'Augmentor'
