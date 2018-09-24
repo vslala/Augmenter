@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="fragments/header :: head"></head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div th:replace="welcome :: sidenav"></div>
+			<div  class="col-md-6">
+				<form action="/intent/parameter">
+					<div class="form-group">
+						<label class="form-label">Select Intent</label>
+						<select class="form-control">
+							<option disabled selected>Select...</option>
+							<option th:each="intent: ${intents}" 
+									th:text="${intent.displayName}"
+									th:value="${intent.id}"></option>
+						</select>
+					</div>
+					<div>
+						<div class="form-group">
+							<label class="form-label">inputName</label>
+							<input class="form-control" name="inputName">
+						</div>
+					</div>
+					<div>
+						<div class="form-group">
+							<label class="form-label">dbColumnName</label>
+							<input class="form-control" name="dbColumnName">
+						</div>
+					</div>
+					<div>
+						<div class="form-group">
+							<label class="form-label">queryPlaceholderName</label>
+							<input class="form-control" name="queryPlaceholderName">
+						</div>
+					</div>
+					<div>
+						<div class="form-group">
+							<label class="form-label">regexValidationPattern</label>
+							<input class="form-control" name="regexValidationPattern">
+						</div>
+					</div>
+					<div>
+						<div class="form-group">
+							<label class="form-label">isRequired</label>
+							<input class="form-control" name="isRequired">
+						</div>
+					</div>
+					<div>
+						<div class="form-group">
+							<label class="form-label">paramType</label>
+							<input class="form-control" name="paramType">
+						</div>
+					</div>
+					<div>
+						<div class="form-group">
+							<button class="btn btn-primary"  type="submit">
+								Create New Intent Parameter
+							</button>
+						</div>
+					</div>
+					</form>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

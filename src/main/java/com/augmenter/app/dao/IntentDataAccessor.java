@@ -3,6 +3,7 @@ package com.augmenter.app.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,9 @@ import com.augmenter.app.vo.ParameterType;
 import com.augmenter.app.vo.Query;
 import com.augmenter.app.vo.UserPayload;
 
+import lombok.extern.log4j.Log4j;
+
+@Log4j
 @Repository
 public class IntentDataAccessor {
 
@@ -74,6 +78,28 @@ public class IntentDataAccessor {
 					}
 					
 				});
+	}
+
+	/**
+	 * Fetch the list of all intents from database
+	 * @return
+	 */
+	public List<IntentInfo> fetchAllIntents() {
+		
+		List<IntentInfo> intents  =  jdbcTemplate.query(
+				ReaderUtil.readSQLFile("fetch_all_intents"), 
+				new RowMapper<IntentInfo>() {
+					@Override
+					public IntentInfo mapRow(ResultSet rs, int rowNum) throws SQLException {
+						IntentInfo  intent =  new IntentInfo();
+						intent.setId(rs.getInt("intent_id"));
+						intent.setDisplayName(rs.getString("intent_display_name"));
+						intent.setName(rs.getString("intent_name"));
+						return intent;
+					}
+				});
+		log.info("Total Intents: " + intents.size());
+		return intents;
 	}
 	
 	

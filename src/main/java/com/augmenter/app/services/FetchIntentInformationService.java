@@ -42,4 +42,12 @@ public class FetchIntentInformationService {
 		ResultSet rs = intentResponseGetter.getIntentResponseData(intentInfo, transformedParams);
 	}
 
+	/**
+	 * Fetches all the intents from the database
+	 * @return
+	 */
+	public List<IntentInfo> getAllIntents() {
+		return intentDataAccessor.fetchAllIntents();
+	}
+
 }

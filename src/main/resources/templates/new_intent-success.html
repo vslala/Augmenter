@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="fragments/header :: head"></head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<h2>Intent Created Successfully!</h2>
+			<span th:if="${message == null}" class="alert alert-warning">
+				You have already created this intent before.
+			</span>
+			<span th:unless="${message != ''}" class="alert alert-success">
+				[[${message}]]
+			</span>
+		</div>
+		<div class="row">
+			<div th:replace="welcome :: sidenav"></div>
+			<div class="col-md-6">
+				<ul>
+					<li><a href="/intent/new">Create New Intent</a></li>
+					<li><a href="/intent">Back to home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

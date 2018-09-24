@@ -3,6 +3,7 @@ buildscript {
 		springBootVersion = '2.0.3.RELEASE'
 		gsonVersion = '2.8.5'
 		mysqlConnectorJavaVersion = '5.1.46'
+		webjarsVersion = '4.1.3'
 	}
 	repositories {
 		mavenCentral()
@@ -45,7 +46,7 @@ dependencies {
 	compile group: 'log4j', name: 'log4j', version: '1.2.17'
 	compile("org.springframework.boot:spring-boot-devtools:${springBootVersion}")
 	compile group: 'org.jsoup', name: 'jsoup', version: '1.8.3'
-	compile group: 'org.webjars', name: 'bootstrap', version: '4.1.3'
+	compile group: 'org.webjars', name: 'bootstrap', version: '${webjarsVersion}'
 
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
